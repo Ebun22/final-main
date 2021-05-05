@@ -1,0 +1,863 @@
+@font-face {
+  font-family: punk kid;
+  src: url("../punk-kid/Punk Kid/punk kid.ttf");
+}
+*{
+  box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+}
+body, html{
+  top: 0;
+  margin: 0;
+  max-width: 1366px;
+  position: relative;
+  font-family: 'Arimo', sans-serif;
+}
+.body{
+  width: 100%;
+  position:relative;
+  height: 100%;
+  top: 0;
+  left:0;
+  bottom: 0;
+  right: 0;
+}
+body{
+overflow-x: hidden;
+background: linear-gradient(
+  rgba(0, 0, 0, 1),
+  rgba(0, 0, 0, 1),
+  rgba(19, 15, 15, 1),
+  rgba(14, 13, 13, 1),
+  rgba(42, 27, 29, 1),
+  rgba(174, 5, 21, 1)
+  );
+}
+.row::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.invisible{
+  display: none !important;
+}
+[class*="col-"]{
+  padding: 1.464% 5.7%;
+  float: left;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.text{
+        font-size: 0.9em;
+        color:#fff ;
+        font-family: 'Arimo', sans-serif;
+      }
+.headers{
+  margin-top: 0;
+  font-size: 2.2em;
+    font-family: 'Arimo', sans-serif;
+}
+.title{
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+li a, li, .socials a{
+  display: inline;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    transition: All .62s linear;
+}
+.mobile,.mobile-nav, .close1{
+  display: none;
+}
+.fade-in{
+  width: 100%;
+  transform: translateX(-100%);
+  box-sizing: border-box;
+  transition: All .55s;
+}
+.active{
+  transform: translateX(0%);
+  //overflow-y: scroll;
+  //opacity: 1;
+  transition: All .55s;
+}
+.overlay{
+  //width: 100%;
+  position: fixed;
+  height: 100%;
+  opacity: 0. 6;
+  top: 0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 1);
+   z-index: 1;
+   display: none
+}
+.header{
+  padding-right: 5.9%;
+  margin-bottom: 40px;
+  margin-top: 0;
+  height: 100%;
+  width: 100%;
+}
+.head{
+  display: inline-block;
+  margin: 0;
+  width: 50%;
+  margin-top: 3%;
+  font-size: 4.4em;
+  letter-spacing: 0.1em;
+font-family: "punk kid" !important;
+}
+.nav-bar{
+  margin-top: 0;
+}
+nav{
+  display: inline-block;
+  float: right;
+  width: 50%;
+  margin-top: 7%;
+}
+.side-nav{
+  //float: right;
+    margin-left: 14%;
+  //display: inline;
+}
+.side-nav li {
+  text-align: right;
+  display: inline-block;
+    padding:7%; /*25px;*/
+    padding-top: 0px;
+}
+.side-nav li a{
+  color: #fff;
+  font-family: "punk kid" !important;
+  font-size: 1.1em;
+}
+.side-nav li a:hover{
+  text-decoration: underline;
+  font-weight: bold;
+  transition: All .60s linear;
+}
+.side-nav li:last-of-type {
+  padding: 0px;
+}
+main{
+  display:block;
+}
+.main{
+  width:100%;
+  margin-top: 75px;
+  display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: auto;
+grid-column-gap: 7%;
+grid-row-gap: 95px;
+}
+.imageBox{
+  width:/*340px*/ 97.2%;
+  cursor: pointer;
+}
+.image-1{
+/*here's The thingy that works it*/
+background: url("../images/i dey your back.JPG");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+height:340px;
+}
+.image-2{
+/*here's The thingy that works it*/
+background: url("../images/Adanna.jpg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+height: 340px;
+}
+.image-3{
+/*here's The thingy that works it*/
+background: url("../images/Options.jpg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+height: 340px;
+}
+.image-4{
+/*here's The thingy that works it*/
+background: url("../images/BROKEN.jpg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+height: 340px;
+}
+.image-5{
+/*here's The thingy that works it*/
+background: url("../images/YOU.jpg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+height: 340px;
+}
+.image-6{
+/*here's The thingy that works it*/
+background: url("../images/THE GOAT.jpg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+height:340px;
+position: relative;
+transition: All 1s ease-in;
+}
+.image-7{
+/*here's The thingy that works it*/
+background: url("../images/IMG-20200823-WA0001.jpg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+height: 340px;
+}
+.image-8{
+/*here's The thingy that works it*/
+background: url("../images/IMG-20201109-WA0039.jpg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+height: 340px;
+}
+[class*="image-"]:hover .cover{
+  //background-color:rgba(255, 148, 148, 0.4);
+  background:linear-gradient(
+			rgba(0, 0, 0, 0),
+			rgba(0, 0, 0, 0.7),
+			rgba(0, 0, 0, 1)
+		);
+	 /*linear-gradient(#221f1f,#582323)*/
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height:100%;
+  z-index: 2;
+  position: relative;
+  transition: background-color .58s ease-in;
+  cursor: pointer;
+}
+.img{
+  opacity: 0;
+  width: 100%;
+/*if transitioned, play button apears when hover is removed*/
+  //transition: All .55s ease-out;
+}
+[class*="image-"]{
+  width: 100%;
+  border-radius: 6px;
+}
+[class*="image-"]:hover .img{
+  width: 20%;
+  vertical-align: middle;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  opacity: 1;
+  transition: opacity .54s ease-in;
+}
+[class*="image-"]:hover{
+  border: 2px solid #fff;
+  border-radius: 6px;
+  transition: All .57s ease-in-out;
+}
+.song-title{
+  font-size:  1.8em;
+  font-weight:bold ;
+  font-family: Lato, sans-serif;
+/*Times New Roman, Verdana*/
+}
+figcaption{
+  //font-family:Lato, sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+.Quote-box{
+  border-top: 1px solid #a1a09d;
+  border-bottom: 1px solid #a1a09d;
+  background:#040404;
+  padding:0px;
+}
+.Quote{
+  font-family: Lato, sans-serif;
+  margin: 35px 0px;
+  text-align: center;
+  font-size: 20px;
+  color: #e4ddce;
+  position: relative;
+  font-style: italic;
+}
+.Quote:before{
+  content: "\201C";
+  font-weight: bold;
+  font-size: 80px;
+    color: #fa2525;
+    position: absolute;
+    top: -30px;
+    left: 36%;
+    font-family: Georgia;
+}
+
+.Quote:after {
+    content: "\201D";
+    font-weight: bold;
+    font-size:80px;
+    color: #fa2525;
+    position: absolute;
+    bottom: -68px;
+    right: 37%;
+      font-family: Georgia;
+}
+.sub{
+  text-align: center;
+  margin-top: 50px;
+}
+.sub p.text{
+  font-size: 20px;
+}
+#email{
+  width: 50%;
+  height: 43px;
+  background: #c9c9c9;
+  border: none;
+  padding-left:20px;
+  transition: All .55s ease-in;
+}
+#email::-moz-placeholder{
+color:#77756f;
+}
+
+#email:hover {
+background:#fffcf6;
+transition: .55s ease-out;
+}
+form button{
+  background: transparent;
+  width: 90px;
+  height: 50px;
+  margin-top: 20px;
+  border-color:#fff;
+  font-weight: bold;
+  border-radius: 2px;
+    transition: All .57s ease-out;
+}
+form button:hover{
+  background: #fffbfb;
+  color:#343131;
+  border: none;
+  transition: All .78s ease-out;
+  outline: none;
+}
+.socials{
+  text-align:center;
+  padding-top: 0;
+  //margin-top: 20px;
+  margin-bottom: 40px;
+}
+.gradient-text{
+  font-size: 2.3em;
+  font-weight: bold;
+}
+a .icon{
+  display: inline-block;
+  position: static;
+  color: white;
+  font-size:25px;
+  padding:0px 20px;
+  transition: All .40s linear;
+
+}
+a .icon:hover{
+    transform: scale(1.5);
+    transition: All .40s linear;
+}
+.end{
+    border-top: 1px solid #a1a09d;
+    background:#040404;
+    padding: 35px 20px;
+    margin-top: 40px;
+    width: 100%;
+    font-size: 14px;
+    color: #9b9b9b;
+}
+footer{
+  width:100%;
+}
+.right-end{
+  font-size: 14px;
+  float: right;
+  color: #9b9b9b;
+}
+.right-end:hover{
+  color: #fff;/*c18816*/
+  //font-weight: bold;
+}
+.icon{
+  display: inline;
+  z-index: 2;
+}
+
+.top{
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Varela Round', sans-serif;
+  display: inline;
+  //margin-left: 79.52%;
+  cursor: pointer;
+  width:auto;
+  float: right;
+  }
+.top:hover{
+  color:#fff;
+}
+.overlay3{
+  width: 100%;
+  height:100%;
+  top: 0;
+  left:0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.95);
+ transition: background-color .55s ease-in;
+}
+.overlay3 .overlay-text{
+  position: absolute;
+ color: white;
+ text-align: center;
+ vertical-align: middle;
+  left: 25%;
+  z-index: 3;
+  color:  white;
+}
+.not-overlay3{
+  background-color: transparent;
+ transition: background-color .55s ease-in;
+}
+.overlay-text{
+display: none;
+<<<<<<< HEAD
+=======
+ grid-column-gap: 10%;
+>>>>>>> 3575cfb... first commit
+grid-template-columns: repeat(1, 1fr);
+grid-column-gap: 10%;
+grid-auto-rows: minmax(100px, auto);
+}
+
+.close{
+  width: 20px;
+  font-size: 40px;
+  color: #fff;
+  float: right;
+  margin-top: 2%;
+   margin-bottom: -30%;
+  display: inline-block;
+  transition: All 0.2s ;
+    height: 50px;
+}
+.close:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: All 0.6s ease-in-out;
+}
+.overlay-text img{
+  width: 350px;
+  height:350px;
+    top:  50%;
+    opacity: 1;
+    left: 5%;
+    grid-column: 1;
+    display: block;
+  }
+
+.song-links{
+  grid-column: 2;
+}
+.song-links a{
+  height:40px;
+  margin-bottom: 26px;
+  transition: All .55s ease-in-out;
+  }
+  .song-links img{
+    width: /*45%*/ 75px;
+    height: 30px;
+<<<<<<< HEAD
+    margin-bottom: 18px;
+=======
+    margin-bottom: 17px;
+>>>>>>> 3575cfb... first commit
+  }
+    .song-links .cloud{
+      margin-top: -15px;
+      height: 60px;
+    }
+.song-links p{
+  text-align: left;
+  font-size: 2em;
+  font-weight: 900;
+  margin-top: 0px;
+}
+.song-links a img:hover{
+  transform: scale(1.2);
+  transition: All 0.6s ease-in-out;
+}
+.main-2.col-6{
+float:none;
+}
+.main-2{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 50px;
+  grid-row-gap: 70px;
+}
+.vidTitles{
+  margin-top: 20px;
+}
+[class*="vid-"]{
+  cursor: pointer;
+}
+.contacts{
+float: none;
+  padding-right: 0px;
+}
+.before-text{
+  line-height: 1.5em;
+  font-family: 'Varela Round', sans-serif;
+  width: 100%;
+  float: none;
+  font-size: 1.2em;
+  display: block;
+}
+/*Premier page design*/
+.flex{
+  display:flex;
+  flex-direction: column;
+}
+.heading-cont{
+  margin-bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width:70%;
+}
+.heading, .img-cap{
+  text-align: center;
+  justify-content: center;
+  font-size: 2.5em;
+  font-weight: 700;
+  font-family: 'Red Hat Text', sans-serif;
+}
+.img-cont{
+  margin-top: 30px;
+  width: 30%;
+  height: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-cont img{
+  width: 100%;
+  margin-left: -8%;
+  border-radius: 5%;
+  border: 1px solid #ffff;
+}
+.timeCard-cont{
+  margin: auto;
+  display:flex;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+}
+.time-card{
+  width: 13.725%;
+  position: relative;
+  margin: auto 5% 6% 5%;
+}
+.card::before {
+  display: block;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: calc(50% - 21px);
+  height: 9.5px;
+  width: 3%;
+  background-color: #000;
+  z-index: 100;
+  border-radius: 0 15px 15px 0;
+}
+.card::after {
+  display: block;
+  position: absolute;
+  content: "";
+  right: 0;
+  top: calc(50% - 21px);
+  height: 9.5px;
+  width: 3%;
+  background-color:#000;
+  z-index: 100;
+  border-radius: 15px 0 0 15px;
+}
+.card > .body {
+  background: #1c1d26;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.25em;
+  border-radius: .75rem;
+  color: #ff4070;
+  font-weight: 700;
+  position: relative;
+  height: 10.25rem;
+  width: 100%;/*10.25rem;*/
+  box-shadow: 0px 8px 5px rgb(0 0 0 / 80%);
+}
+
+
+.body::after {
+  /* content: ""; */        Joshua commented this part
+  position: absolute;
+  top: 0;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  border-radius: .75rem;
+  background-color:#1b1c25;
+  opacity: 0.5;
+}
+
+
+.time-caption{
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Red Hat Text', sans-serif;
+}
+.center{
+  text-align: center;
+}
+.img-cap{
+  margin-top:20px;
+  margin-left: -7%;
+}
+.next-line{
+  display: block;
+  font-size: 0.8em;
+}
+h1.margin{
+  margin-left: -8%;
+}
+@media screen and (max-width: 600px){
+  .desktop{display: none;}
+<<<<<<< HEAD
+  .mobile,.mobile-nav{
+=======
+  .mobile, .mobile-nav{
+>>>>>>> 3575cfb... first commit
+    display: block;
+  }
+  .header{
+    margin-bottom: 0;
+  }
+  .hamburger-icon{
+    margin-top: 10%;
+    position: absolute;
+    top: 0;
+    width: 150px;
+  }
+  .hamburger-icon div{
+    background: #fff;
+    border-radius: 10px;
+    width: 36px;
+    height: 3px;
+    margin-bottom: 5%;
+  }
+  .mobile-nav{
+    visibility:hidden;
+    opacity: 0.97;
+    margin: 0;
+    position:fixed;
+    z-index: 5;
+    background: black;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: All 0.55s linear;
+  }
+  .close-moblile{
+    opacity: 0;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    top: 20px;
+    left: 15%;
+    font-size: 3em;
+    transition: All 0.55s linear;
+  }
+  .side-nav-mobile{
+    padding: 0;
+      opacity: 0;
+  }
+   .side-nav-mobile li{
+     font-weight: 700;
+      padding:15px 0px;
+     display: block;
+     position: relative;
+     text-align: center;
+      transition: All 0.55s linear;
+   }
+    .side-nav-mobile li a:active{
+      color: #e4ddce;
+    }
+ .side-nav-mobile li a{
+   padding:10px 0px;
+   color: #fff;
+ }
+ .show{
+ opacity: 1;
+ transition: All 0.55s linear;
+ }
+  .head{
+    width: 100%;
+    text-align: center;
+    margin-left: 4%
+  }
+  .cover img{
+  width: 0;
+  }
+  .cover{
+    height: 100%;
+  }
+  [class*="image-"]{
+    height: 380px;
+  }
+  nav{
+    position: relative;
+    display:block;
+    top:25px;
+  }
+  nav{margin-right: 0%; width: 100%;}
+  .side-nav{
+      margin: 0;
+    margin-left:6%;
+    padding: 0px;
+  }
+    .side-nav li{
+      padding: 2.5%;
+    }
+  .main{
+    margin-top: 57px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  }
+  .imageBox{
+    justify-self: center;
+   width: 90%;
+  }
+  .overlay-text{
+    left: 17% !important;
+  display: none;
+   width: 63%;
+  grid-template-columns: 1fr;
+  grid-column-gap: 10%;
+  grid-auto-rows: minmax(100px, auto);
+  }
+  .song-links{
+    grid-column: 1;
+  }
+  .overlay-text img{
+    width: 250px;
+    height: 250px;
+    margin-top: -18px;
+  }
+  .song-links img{
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    width:33%/*110px*/;
+    height: 25px;
+    margin-bottom: 26px;
+  }
+  .song-links p{
+    text-align: center;
+  }
+  .top{
+    //margin-left: 38%;
+  }
+  .text.para{
+    padding-top: 30px;
+    display: inline;
+  }
+  .before-text{
+      margin-top: 40px;
+  }
+    .main-2{
+width: 100%;
+    display:grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+[class*="vid-"] iframe{
+    width: 100%;
+}
+.heading-cont{
+  width:100%;
+}
+.heading-cont span, .img-cap span{
+  display: block;
+}
+.time-card {
+    width: 21.25%;
+    position: relative;
+    margin: auto 2% 3% 2%;
+}
+.card > .body {
+  height: 100px;
+  font-size: 2em;
+}
+.img-cap{
+  margin-left: 0%;
+  font-size: 1.5em;
+}
+.img-cont img, h1.margin{
+  margin-left: 0%;
+}
+
+/*
+ .card >.body{
+    font-size: 50%;
+    width: 6.7%;
+  }
+
+  .card > .body {
+    height: 8rem;
+    //width: 8rem;
+    font-size: 4rem;
+  }*/
+  .header, .footer {
+    align-items: flex-end;
+    padding-bottom: 3rem;
+  }
+}

@@ -455,10 +455,7 @@ footer{
 }
 .overlay-text{
 display: none;
-<<<<<<< HEAD
-=======
- grid-column-gap: 10%;
->>>>>>> 3575cfb... first commit
+grid-column-gap: 10%;
 grid-template-columns: repeat(1, 1fr);
 grid-column-gap: 10%;
 grid-auto-rows: minmax(100px, auto);
@@ -501,11 +498,8 @@ grid-auto-rows: minmax(100px, auto);
   .song-links img{
     width: /*45%*/ 75px;
     height: 30px;
-<<<<<<< HEAD
     margin-bottom: 18px;
-=======
     margin-bottom: 17px;
->>>>>>> 3575cfb... first commit
   }
     .song-links .cloud{
       margin-top: -15px;
@@ -633,7 +627,7 @@ float: none;
 
 
 .body::after {
-  /* content: ""; */        Joshua commented this part
+  /* content: ""; */       /* Joshua commented this part*/
   position: absolute;
   top: 0;
   bottom: 50%;
@@ -667,11 +661,8 @@ h1.margin{
 }
 @media screen and (max-width: 600px){
   .desktop{display: none;}
-<<<<<<< HEAD
   .mobile,.mobile-nav{
-=======
   .mobile, .mobile-nav{
->>>>>>> 3575cfb... first commit
     display: block;
   }
   .header{

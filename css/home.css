@@ -661,7 +661,6 @@ h1.margin{
 }
 @media screen and (max-width: 600px){
   .desktop{display: none;}
-  .mobile,.mobile-nav{
   .mobile, .mobile-nav{
     display: block;
   }

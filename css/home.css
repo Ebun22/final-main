@@ -750,8 +750,9 @@ h1.margin{
   nav{margin-right: 0%; width: 100%;}
   .side-nav{
       margin: 0;
-    margin-left:6%;
+    margin-left:0;
     padding: 0px;
+	  padding-left: 0px;
   }
     .side-nav li{
       padding: 2.5%;
@@ -759,7 +760,7 @@ h1.margin{
   .main{
     margin-top: 57px;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   }
   .imageBox{
